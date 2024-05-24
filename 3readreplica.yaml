@@ -1,0 +1,8 @@
+Resources:       
+  RDSReadReplica:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      SourceDBInstanceIdentifier: wp-app-db
+      DBInstanceClass: db.t3.micro
+      PubliclyAccessible: false
+      AvailabilityZone: us-east-1b
